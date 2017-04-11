@@ -1,0 +1,16 @@
+portname: COM10
+baudrate: 9600
+databits: 8
+stopbits: 1
+parity: 0
+sleep: 4000
+firstCharacter: A
+lastCharacter: B
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080  
+  adminConnectors:
+    - type: http
+      port: 8081
